@@ -1,6 +1,6 @@
 {% set name = "mockupdb" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "795496e2397e867988d2394e168744941586067ead72bf89a6bb04cbea88fdb4" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "6cdcfdd14e40a11bb01a8972502d3f6c0a96bccfd8774e19385bf3b38b852d63" %}
 
 package:
   name: "{{ name|lower }}"
