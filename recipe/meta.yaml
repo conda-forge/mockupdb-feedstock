@@ -1,19 +1,19 @@
 {% set name = "mockupdb" %}
-{% set version = "1.7.0" %}
-{% set sha256 = "6cdcfdd14e40a11bb01a8972502d3f6c0a96bccfd8774e19385bf3b38b852d63" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "8832627ee23c6df620ed86a4ccc5ca71f0375e704b1686851950946cd22b1f8c" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "{{ sha256 }}"
+  sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
